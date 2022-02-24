@@ -84,3 +84,15 @@ a:hover {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
 }
+
+/* contact styles */
+#contact {
+  text-align: center;
+  width: 400px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+#contact p:last-child {
+  margin-top: 3rem;
+}
