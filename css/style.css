@@ -42,3 +42,45 @@ a:hover {
   color: var(--hotmag);
   text-decoration: none;
 }
+
+/* intro styles */
+#intro {
+  padding-bottom: 10rem;
+}
+
+#intro p {
+  font-size: 1rem;
+  /* no units, just proportion */
+  line-height: 1.5;
+}
+
+#intro .name {
+  font-family: var(--mono);
+  font-size: 1rem;
+}
+
+#intro h2 {
+  font-size: 4rem;
+}
+
+.name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: var(--aqua);
+  display: block;
+  font-weight: 300;
+}
+
+.gradient-text {
+  background-image: linear-gradient(
+    110deg,
+    rgb(111, 97, 199) 0%,
+    rgb(202, 89, 163)
+  );
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
