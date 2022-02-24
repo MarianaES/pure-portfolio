@@ -96,3 +96,77 @@ a:hover {
 #contact p:last-child {
   margin-top: 3rem;
 }
+
+/* navbar styles */
+nav {
+  font-family: var(--mono);
+  font-size: 80%;
+  padding: 1rem;
+}
+
+nav h1 a {
+  font-family: var(--sans);
+}
+
+nav ul {
+  /*   paddding everything over to the left side */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+nav [class*="fa-"] {
+  font-size: 150%;
+  color: var(--aqua);
+}
+
+nav h1 [class*="fa-"] {
+  font-size: 120%;
+  color: var(--aqua);
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  /*   make all area to be clickable */
+  display: block;
+}
+
+nav a:hover,
+nav [class*="fa-"]:hover {
+  color: var(--magenta);
+}
+
+.button {
+  background-color: var(--magenta);
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.button:hover {
+  color: var(--white);
+  background-color: var(--hotmag);
+}
+
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+}
