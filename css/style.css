@@ -131,7 +131,7 @@ nav [class*="fa-"] {
 }
 
 nav h1 [class*="fa-"] {
-  font-size: 120%;
+  font-size: 100%;
   color: var(--aqua);
 }
 
@@ -185,4 +185,60 @@ footer ul {
   justify-content: center;
   gap: 3rem;
   font-size: 3rem;
+}
+
+/* multicolor animation */
+@keyframes colorCycle {
+  0% {
+    color: rgb(35, 139, 230);
+  }
+  12.5% {
+    color: rgb(16, 184, 133);
+  }
+  25% {
+    color: rgb(64, 192, 87);
+  }
+  37.5% {
+    color: rgb(252, 196, 23);
+  }
+  50% {
+    color: rgb(255, 146, 43);
+  }
+  62.5% {
+    color: rgb(250, 82, 82);
+  }
+  75% {
+    color: rgb(240, 101, 149);
+  }
+  87.5% {
+    color: rgb(132, 94, 246);
+  }
+  100% {
+    color: rgb(35, 139, 230);
+  }
+}
+
+.multicolor {
+  animation: colorCycle 5s infinite linear;
+}
+
+@keyframes lightsFlicker {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  70%,
+  100% {
+    opacity: 0.99;
+  }
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  69.999% {
+    opacity: 0.4;
+  }
 }
