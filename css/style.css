@@ -1,11 +1,14 @@
-:root {
-  --black: #171321;
-  --dkblue: #0d314b;
-  --plum: #4b0d49;
-  --hotmag: #ff17e4;
-  --magenta: #e310cb;
-  --aqua: #86fbfb;
+:root {  
+  --midnight: #171321;
+  --dkpurple: #2e3054;
+  --purple: #4d4569;
+  --violet: #7f5a85;
+  --pink: #d47077;
+  --yellow: #FFCE76;
+  --dkmint: #32a093;
+  --mint:#15d1bb;
   --white: #f7f8fa;
+  --gray: #5d5c5c;
   --font-size: 1.3rem;
   --mono: "Oxygen mono", monospace;
   --sans: Oxygen, sans-serif;
@@ -25,7 +28,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--sans);
-  background-color: var(--black);
+  background-color: var(--midnight);
   color: var(--white);
   font-size: var(--font-size);
 }
@@ -37,11 +40,11 @@ h3 {
 }
 
 a {
-  color: var(--magenta);
+  color: var(--pink);
 }
 
 a:hover {
-  color: var(--hotmag);
+  color: var(--yellow);
   text-decoration: none;
 }
 
@@ -50,12 +53,12 @@ img {
 }
 
 /* background color divs */
-.section-plum {
-  background-color: var(--plum);
+.section-pink {
+  background-color: var(--pink);
 }
 
-.section-dkblue {
-  background-color: var(--dkblue);
+.section-dkpurple {
+  background-color: var(--dkpurple);
 }
 
 .gradient {
@@ -64,7 +67,7 @@ img {
     rgba(238, 174, 202, 1) 0%,
     rgba(233, 213, 148, 1) 100%
   );
-  height: 2px;
+  height: 12px;
 }
 
 .gradient-text {
@@ -106,7 +109,6 @@ img {
 .name span {
   font-family: var(--sans);
   font-size: 4rem;
-  color: var(--aqua);
   display: block;
   font-weight: 300;
 }
@@ -153,12 +155,12 @@ nav li:first-child {
 
 nav [class*="fa-"] {
   font-size: 150%;
-  color: var(--aqua);
+  color: var(--pink);
 }
 
 nav h1 [class*="fa-"] {
   font-size: 100%;
-  color: var(--aqua);
+  color: var(--pink);
 }
 
 nav a {
@@ -170,11 +172,11 @@ nav a {
 
 nav a:hover,
 nav [class*="fa-"]:hover {
-  color: var(--magenta);
+  color: var(--yellow);
 }
 
 .button {
-  background-color: var(--magenta);
+  background-color: var(--dkmint);
   color: white;
   padding: 0.5rem;
   border-radius: 8px;
@@ -183,8 +185,8 @@ nav [class*="fa-"]:hover {
 }
 
 .button:hover {
-  color: var(--white);
-  background-color: var(--hotmag);
+  color: var(--black);
+  background-color: var(--mint);
 }
 
 /* footer styles */
@@ -217,7 +219,7 @@ footer ul {
 }
 
 #projects h3 {
-  color: var(--aqua);
+  color: var(--yellow);
 }
 
 #projects h4 {
@@ -227,7 +229,7 @@ footer ul {
 }
 
 .blackbox {
-  background-color: var(--black);
+  background-color: var(--midnight);
   padding: 1rem;
   border-radius: 10px;
   color: var(--white);
@@ -248,8 +250,8 @@ footer ul {
 
 #projects img {
   margin: 2rem 0 4rem 0;
-  border-left: 1px solid var(--aqua);
-  border-top: 1px solid var(--aqua);
+  border-left: 1px solid var(--yellow);
+  border-top: 1px solid var(--pink);
   border-radius: 25px;
   padding: 1rem;
 }
@@ -286,7 +288,7 @@ footer ul {
 }
 
 .multicolor {
-  animation: colorCycle 5s infinite linear;
+  animation: colorCycle 5s infinite;
 }
 
 @keyframes lightsFlicker {
