@@ -259,31 +259,19 @@ footer ul {
 /* multicolor animation */
 @keyframes colorCycle {
   0% {
-    color: rgb(35, 139, 230);
-  }
-  12.5% {
-    color: rgb(16, 184, 133);
+    color: var(--mint);
   }
   25% {
-    color: rgb(64, 192, 87);
-  }
-  37.5% {
-    color: rgb(252, 196, 23);
+    color: var(--pink);
   }
   50% {
-    color: rgb(255, 146, 43);
-  }
-  62.5% {
-    color: rgb(250, 82, 82);
+    color: var(--yellow);
   }
   75% {
-    color: rgb(240, 101, 149);
-  }
-  87.5% {
-    color: rgb(132, 94, 246);
+    color: var(--dkmint);
   }
   100% {
-    color: rgb(35, 139, 230);
+    color: var(--mint);
   }
 }
 
