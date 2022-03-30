@@ -12,6 +12,8 @@
   --font-size: 1.3rem;
   --mono: "Oxygen mono", monospace;
   --sans: Oxygen, sans-serif;
+  --fraunces: 'Fraunces', serif; 
+  --montse: 'Montserrat Alternates', sans-serif;
 }
 
 html {
@@ -27,7 +29,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: var(--sans);
+  font-family: var(--montse);
   background-color: var(--midnight);
   color: var(--white);
   font-size: var(--font-size);
@@ -98,7 +100,7 @@ img {
 }
 
 #intro .name {
-  font-family: var(--mono);
+  font-family: var(--fraunces);
   font-size: 1rem;
 }
 
@@ -107,7 +109,7 @@ img {
 }
 
 .name span {
-  font-family: var(--sans);
+  font-family: var(--montse);
   font-size: 4rem;
   display: block;
   font-weight: 300;
@@ -127,13 +129,13 @@ img {
 
 /* navbar styles */
 nav {
-  font-family: var(--mono);
+  font-family: var(--fraunces);
   font-size: 80%;
   padding: 1rem;
 }
 
 nav h1 a {
-  font-family: var(--sans);
+  font-family: var(--montse);
 }
 
 nav ul {
@@ -180,7 +182,7 @@ nav [class*="fa-"]:hover {
   color: white;
   padding: 0.5rem;
   border-radius: 8px;
-  font-family: var(--mono);
+  font-family: var(--fraunces);
   text-decoration: none;
 }
 
@@ -224,7 +226,7 @@ footer ul {
 
 #projects h4 {
   font-size: 1rem;
-  font-family: var(--mono);
+  font-family: var(--fraunces);
   margin: 0;
 }
 
